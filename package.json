@@ -1,0 +1,27 @@
+{
+  "name": "medusanote",
+  "version": "1.0.0",
+  "description": "Assignment II - WEB",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MadushaS/MedusaNote.git"
+  },
+  "keywords": [
+    "text",
+    "editor",
+    "notepad"
+  ],
+  "author": {
+    "name": "Madusha Sandaruwan",
+    "email": "madushakv@live.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.2",
+    "bootstrap": "^5.2.0"
+  }
+}
