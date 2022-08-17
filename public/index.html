@@ -4,9 +4,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
   <title>MedusaNote</title>
 </head>
-<body>
-<h1 class="text-3xl">MedusaNote</h1>
+<body class="bg-neutral-700">
+<nav class="relative container border-b-2 mx-auto p-6">
+  <div class="flex items-center justify-between">
+    <div class="pt-1">
+      <img src="assets/images/logo-light-lg.png" class="w-80" alt="Logo">
+    </div>
+    <div class="hidden md:flex space-x-6 text-stone-100">
+      <button type="button" class="flex-none flex items-center shadow justify-center w-9 h-9 rounded-md hover:bg-blue-800 text-slate-300 border border-slate-200" title="Bold">
+        <i class="fa-solid fa-bold"></i>
+      </button>
+      <button type="button" class="flex-none flex items-center shadow justify-center w-9 h-9 rounded-md hover:bg-blue-800 text-slate-300 border border-slate-200" title="Italic">
+        <i class="fa-solid fa-italic"></i>
+      </button>
+      <button type="button" class="flex-none flex items-center shadow justify-center w-9 h-9 rounded-md hover:bg-blue-800 text-slate-300 border border-slate-200" title="Underline">
+        <i class="fa-solid fa-underline"></i>
+      </button>
+      <button type="button" class="flex-none flex items-center shadow justify-center w-9 h-9 rounded-md hover:bg-blue-800 text-slate-300 border border-slate-200" title="Font-Color">
+        <i class="fa-solid fa-highlighter"></i>
+      </button>
+      <button type="button" class="flex-none flex items-center shadow justify-center w-9 h-9 rounded-md hover:bg-blue-800 text-slate-300 border border-slate-200" title="Align Left">
+        <i class="fa-solid fa-align-left"></i>
+      </button>
+      <button type="button" class="flex-none flex items-center shadow justify-center w-9 h-9 rounded-md hover:bg-blue-800 text-slate-300 border border-slate-200" title="Align Center">
+        <i class="fa-solid fa-align-center"></i>
+      </button>
+      <button type="button" class="flex-none flex items-center shadow justify-center w-9 h-9 rounded-md hover:bg-blue-800 text-slate-300 border border-slate-200" title="Align Right">
+        <i class="fa-solid fa-align-right"></i>
+      </button>
+      <button type="button" class="flex-none flex items-center shadow justify-center w-9 h-9 rounded-md hover:bg-blue-800 text-slate-300 border border-slate-200" title="Align Justify">
+        <i class="fa-solid fa-align-justify"></i>
+      </button>
+
+    </div>
+  </div>
+</nav>
+<div class="container flex mx-auto my-10 items-center justify-items-center">
+  <div id="editor" class="editor w-full my-3 h-96 md:w-3/4 md:mx-auto p-5 bg-slate-100 border-2 shadow-2xl rounded-3xl overflow-y-auto pl-10" contenteditable>
+    <div>Start typing...</div>
+  </div>
+</div>
+
+<footer class="rounded-t-xl bg-white m-0 p-10 static bottom-0">
+  <div class="grid">
+    <div class="grid-rows-1 items-center self-center justify-self-center">
+      <img src="assets/images/logo-dark.png" class="w-72" alt="Footer-Logo">
+    </div>
+    <h2 class="text-md text-black grid-rows-1 items-center self-center justify-self-center">
+      Made with <i class="fa fa-heart text-red-700"></i> by <span class="font-mono font-thin italic">_MadushaSandaruwan</span>
+    </h2>
+    <div class="grid-rows-1 items-center self-center justify-self-center text-3xl">
+      <a href="https://linkedin.com/in/madushasandaruwan/" title="Visit me on LinkedIn" target="_blank" rel="noopener author"><i class="fab fa-linkedin-in text-gray-300 hover:text-cyan-700"></i></a>
+      <a href="https://github.com/MadushaS" title="Visit me on GitHub" target="_blank" rel="noopener author"><i class="fab fa-github text-gray-300 hover:text-black"></i></a>
+      <a href="https://twitter.com/_MadushaS" title="Visit me on Twitter" target="_blank" rel="noopener author"><i class="fab fa-twitter text-gray-300 hover:text-sky-400"></i></a>
+      <a href="https://facebook.com/kv.madusha/" title="Visit me on Facebook" target="_blank" rel="noopener author"><i class="fab fa-facebook-f text-gray-300 hover:text-sky-600"></i></a>
+    </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/@popperjs/core@2"></script>
 </body>
 </html>
