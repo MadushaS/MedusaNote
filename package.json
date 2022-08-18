@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tailwind build -i src/style.css -o public/assets/css/main.css",
+    "minify": "tailwind -o public/assets/css/main.css --minify",
     "watch": "tailwind build -i src/style.css -o public/assets/css/main.css --watch"
   },
   "repository": {

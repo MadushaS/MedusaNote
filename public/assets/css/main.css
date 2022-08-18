@@ -846,11 +846,6 @@ video {
   color: rgb(56 189 248 / var(--tw-text-opacity));
 }
 
-.hover\:text-sky-700:hover {
-  --tw-text-opacity: 1;
-  color: rgb(3 105 161 / var(--tw-text-opacity));
-}
-
 .hover\:text-sky-600:hover {
   --tw-text-opacity: 1;
   color: rgb(2 132 199 / var(--tw-text-opacity));
