@@ -1,70 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
-  <title>MedusaNote</title>
-</head>
-<body class="bg-neutral-700">
-<nav class="relative container border-b-2 mx-auto p-6">
-  <div class="flex items-center justify-between">
-    <div class="pt-1">
-      <img src="assets/images/logo-light-lg.png" class="w-80" alt="Logo">
-    </div>
-    <div class="hidden md:flex space-x-6 text-stone-100">
-      <button type="button" class="flex-none flex items-center shadow justify-center w-9 h-9 rounded-md hover:bg-blue-800 text-slate-300 border border-slate-200" title="Bold">
-        <i class="fa-solid fa-bold"></i>
-      </button>
-      <button type="button" class="flex-none flex items-center shadow justify-center w-9 h-9 rounded-md hover:bg-blue-800 text-slate-300 border border-slate-200" title="Italic">
-        <i class="fa-solid fa-italic"></i>
-      </button>
-      <button type="button" class="flex-none flex items-center shadow justify-center w-9 h-9 rounded-md hover:bg-blue-800 text-slate-300 border border-slate-200" title="Underline">
-        <i class="fa-solid fa-underline"></i>
-      </button>
-      <button type="button" class="flex-none flex items-center shadow justify-center w-9 h-9 rounded-md hover:bg-blue-800 text-slate-300 border border-slate-200" title="Font-Color">
-        <i class="fa-solid fa-highlighter"></i>
-      </button>
-      <button type="button" class="flex-none flex items-center shadow justify-center w-9 h-9 rounded-md hover:bg-blue-800 text-slate-300 border border-slate-200" title="Align Left">
-        <i class="fa-solid fa-align-left"></i>
-      </button>
-      <button type="button" class="flex-none flex items-center shadow justify-center w-9 h-9 rounded-md hover:bg-blue-800 text-slate-300 border border-slate-200" title="Align Center">
-        <i class="fa-solid fa-align-center"></i>
-      </button>
-      <button type="button" class="flex-none flex items-center shadow justify-center w-9 h-9 rounded-md hover:bg-blue-800 text-slate-300 border border-slate-200" title="Align Right">
-        <i class="fa-solid fa-align-right"></i>
-      </button>
-      <button type="button" class="flex-none flex items-center shadow justify-center w-9 h-9 rounded-md hover:bg-blue-800 text-slate-300 border border-slate-200" title="Align Justify">
-        <i class="fa-solid fa-align-justify"></i>
-      </button>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/solid.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/brands.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+    <title>MedusaNote</title>
+  </head>
+  <body>
+    <nav class="navbar bg-base-100">
+      <div class="flex-1">
+        <label tabindex="0" class="btn btn-ghost">
+            <span class="font-normal capitalize text-3xl"
+              >Medusa<span class="font-bold">Note.</span></span>
+        </label>
+      </div>
+      <div class="flex-none">
+        <ul class="menu menu-horizontal p-0">
+          <li tabindex="0">
+            <a><i class="fa-solid fa-brush"></i>Theme<i class="fa-solid fa-angle-down"></i></a>
+            <ul class="p-2 bg-base-100 z-50">
+              <li>
+                <a data-set-theme="light" data-act-class="ACTIVECLASS">Light</a>
+              </li>
+              <li>
+                <a data-set-theme="dark" data-act-class="ACTIVECLASS">Dark</a>
+              </li>
+              <li>
+                <a data-set-theme="aqua" data-act-class="ACTIVECLASS">Aqua</a>
+              </li>
+              <li>
+                <a data-set-theme="dracula" data-act-class="ACTIVECLASS">Dracula</a>
+              </li>
+              <li>
+                <a data-set-theme="winter" data-act-class="ACTIVECLASS">Wint</a>
+              </li>
+              <li>
+                <a data-set-theme="coffee" data-act-class="ACTIVECLASS">Coffee</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
+    <nav class="relative border-t-2 mx-5 py-6">
+      <div class="items-center content-center self-center justify-self-center sm:space-x-1 md:space-x-6 space-y-4 w-fit mx-auto"  >
+        <div class="tooltip tooltip-bottom z-50" data-tip="Bold">
+          <a class="btn flex-1"><i class="fa-solid fa-bold"></i></a>
+        </div>
+        <div class="tooltip tooltip-bottom z-50" data-tip="Italic">
+          <a class="btn"><i class="fa-solid fa-italic"></i></a>
+        </div>
+        <div class="tooltip tooltip-bottom z-50" data-tip="Underline">
+          <a class="btn"><i class="fa-solid fa-underline"></i></a>
+        </div>
+        <div class="tooltip tooltip-bottom z-50" data-tip="Color">
+          <a class="btn"><i class="fa-solid fa-highlighter"></i></a>
+        </div>
+        <div class="tooltip tooltip-bottom z-50" data-tip="Align Left">
+          <a class="btn"><i class="fa-solid fa-align-left"></i></a>
+        </div>
+        <div class="tooltip tooltip-bottom z-50" data-tip="Align center">
+          <a class="btn"><i class="fa-solid fa-align-center"></i></a>
+        </div>
+        <div class="tooltip tooltip-bottom z-50" data-tip="Align Right">
+          <a class="btn"><i class="fa-solid fa-align-right"></i></a>
+        </div>
+        <div class="tooltip tooltip-bottom z-50" data-tip="Align Justify">
+          <a class="btn"><i class="fa-solid fa-align-justify"></i></a>
+        </div>
+        <div class="tooltip tooltip-bottom z-50" data-tip="Undo">
+          <a class="btn"><i class="fa-solid fa-rotate-left"></i></a>
+        </div>
+        <div class="tooltip tooltip-bottom z-50" data-tip="Redo">
+          <a class="btn"><i class="fa-solid fa-rotate-right"></i></a>
+        </div>
+      </div>
+    </nav>
+    <div class="mockup-window border bg-base-300 my-10 mx-auto md:w-2/3 sm:w-5/6">
+      <div id="editor" class="editor px-30 min-h-[16rem] ml-12 bg-base-200" contenteditable >
+        <div>Start typing...</div>
+      </div>
     </div>
-  </div>
-</nav>
-<div class="container flex mx-auto my-10 items-center justify-items-center">
-  <div id="editor" class="editor w-full my-3 h-96 md:w-3/4 md:mx-auto p-5 bg-slate-100 border-2 shadow-2xl rounded-3xl overflow-y-auto pl-10" contenteditable>
-    <div>Start typing...</div>
-  </div>
-</div>
 
-<footer class="rounded-t-xl bg-white m-0 p-10 static bottom-0">
-  <div class="grid">
-    <div class="grid-rows-1 items-center self-center justify-self-center">
-      <img src="assets/images/logo-dark.png" class="w-72" alt="Footer-Logo">
-    </div>
-    <h2 class="text-md text-black grid-rows-1 items-center self-center justify-self-center">
-      Made with <i class="fa fa-heart text-red-700"></i> by <span class="font-mono font-thin italic">_MadushaSandaruwan</span>
-    </h2>
-    <div class="grid-rows-1 items-center self-center justify-self-center text-3xl">
-      <a href="https://linkedin.com/in/madushasandaruwan/" title="Visit me on LinkedIn" target="_blank" rel="noopener author"><i class="fab fa-linkedin-in text-gray-300 hover:text-cyan-700"></i></a>
-      <a href="https://github.com/MadushaS" title="Visit me on GitHub" target="_blank" rel="noopener author"><i class="fab fa-github text-gray-300 hover:text-black"></i></a>
-      <a href="https://twitter.com/_MadushaS" title="Visit me on Twitter" target="_blank" rel="noopener author"><i class="fab fa-twitter text-gray-300 hover:text-sky-400"></i></a>
-      <a href="https://facebook.com/kv.madusha/" title="Visit me on Facebook" target="_blank" rel="noopener author"><i class="fab fa-facebook-f text-gray-300 hover:text-sky-600"></i></a>
-    </div>
-    </div>
-</footer>
-
-<script src="https://unpkg.com/@popperjs/core@2"></script>
-</body>
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+      <div>
+        <div class="grid-rows-1 items-center self-center justify-self-center">
+          <span class="font-normal capitalize text-4xl"
+            >Medusa<span class="font-bold">Note.</span></span
+          >
+        </div>
+        <h2
+          class="text-md grid-rows-1 items-center self-center justify-self-center"
+        >
+          Made with <i class="fa fa-heart text-red-700"></i> by
+          <div
+            class="tooltip tooltip-bottom cursor-pointer"
+            data-tip="Visit Developer"
+          >
+            <a
+              rel="author noopener"
+              href="https:///about.me/madushasandaruwan"
+              target="_blank"
+              class="font-mono font-bold italic"
+              >_MadushaSandaruwan</a
+            >
+          </div>
+        </h2>
+      </div>
+      <div>
+        <span class="footer-title">Social</span>
+        <div class="grid grid-flow-col gap-4">
+          <div
+            class="tooltip tooltip-bottom cursor-pointer"
+            data-tip="Visit me on LinkedIn"
+          >
+            <a
+              href="https://linkedin.com/in/madushasandaruwan/"
+              target="_blank"
+              rel="noopener author"
+              class="btn btn-circle btn-outline hover:text-sky-400"
+            >
+              <i class="fab fa-linkedin-in text-2xl"></i>
+            </a>
+          </div>
+          <div
+            class="tooltip tooltip-bottom cursor-pointer"
+            data-tip="Visit me on GitHub"
+          >
+            <a
+              href="https://github.com/MadushaS"
+              target="_blank"
+              rel="noopener author"
+              class="btn btn-circle btn-outline hover:text-black"
+            >
+              <i class="fab fa-github text-2xl"></i>
+            </a>
+          </div>
+          <div
+            class="tooltip tooltip-bottom cursor-pointer"
+            data-tip="Visit me on Twitter"
+          >
+            <a
+              href="https://twitter.com/_MadushaS"
+              target="_blank"
+              rel="noopener author"
+              class="btn btn-circle btn-outline hover:text-sky-400"
+            >
+              <i class="fab fa-twitter text-2xl"></i>
+            </a>
+          </div>
+          <div
+            class="tooltip tooltip-bottom cursor-pointer"
+            data-tip="Visit me on Facebook"
+          >
+            <a
+              href="https://facebook.com/kv.madusha/"
+              target="_blank"
+              rel="noopener author"
+              class="btn btn-circle btn-outline hover:text-sky-600"
+            >
+              <i class="fab fa-facebook-f text-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
+  </body>
 </html>
