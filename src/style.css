@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  font-display: swap;
+}
+
 .editor {
   outline: none;
   counter-reset: line;
