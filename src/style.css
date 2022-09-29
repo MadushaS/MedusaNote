@@ -24,3 +24,29 @@
   right: calc(100% + 16px);
   opacity: 0.5;
 }
+
+.font-c-1 {
+  font-family: 'Roboto', sans-serif;
+}
+.font-c-2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.font-c-3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.font-c-4 {
+  font-family: 'Courier New', Courier, monospace;
+}
+.font-c-5 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.font-c-6 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.font-c-7 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.font-c-8 {
+  font-family: Quicksand, Times, serif;
+}
+
