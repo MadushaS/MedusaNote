@@ -7,7 +7,7 @@
            max-width:800px;
            background-color:#444;
            width: 80%;"
-    src="public/assets/images/logo-md.png"
+    src="public/assets/images/logo-lg.png"
     alt="MedusaNote logo">
 </img>
 
