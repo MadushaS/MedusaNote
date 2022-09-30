@@ -6,6 +6,8 @@ const bgColorbtn = document.getElementById("bgColorBtn");
 const exportBtn = document.getElementById("downloadBtn");
 const colorModal = document.getElementById("colorModal");
 const colorTitle = document.getElementById("colorTitle");
+const tabs = document.querySelectorAll('.tab');
+const tabContents = document.querySelectorAll('.tab-content');
 
 const nonValuedCommands = document.querySelectorAll("[data-command-type=nonValue]");
 const valuedCommands = document.querySelectorAll("[data-command-type=value]");
@@ -163,4 +165,21 @@ document.addEventListener("keydown", function(e) {
         }
     }
 
+});
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.target);
+
+        tabContents.forEach(tabContent => {
+            tabContent.classList.add('hidden');
+        });
+
+        tabs.forEach(tab => {
+            tab.classList.remove('tab-active');
+        });
+
+        tab.classList.add('tab-active');
+        target.classList.remove('hidden');
+    });
 });

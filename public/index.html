@@ -8,14 +8,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MadushaS/2E7fq_1k7m/css/fontawesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MadushaS/2E7fq_1k7m/css/brands.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MadushaS/2E7fq_1k7m/css/solid.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
   <title>MedusaNote</title>
 </head>
 
-<body>
-  <nav class="navbar bg-base-100">
+<body class="overflow-x-hidden">
+  <nav class="navbar bg-base-100 flex-wrap">
     <div class="flex-1">
       <label tabindex="0" class="toolbar-btn btn btn-ghost">
         <span class="font-normal capitalize text-3xl">Medusa<span class="font-bold">Note.</span></span>
@@ -24,7 +24,7 @@
     <div class="flex-none">
       <ul class="menu menu-horizontal p-0">
         <li tabindex="0">
-          <a><i class="fa-solid fa-brush"></i>Theme<i class="fa-solid fa-angle-down"></i></a>
+          <a><i class="fa-solid fa-palette"></i>Theme<i class="fa-solid fa-angle-down"></i></a>
           <ul class="p-2 bg-base-100 z-50 border-2 shadow-lg">
             <li>
               <a data-set-theme="light" data-act-class="ACTIVECLASS" class="toolbar-btn btn btn-ghost">Light</a>
@@ -50,112 +50,162 @@
     </div>
   </nav>
 
-  <div class="flex flex-wrap flex-col md:flex-row w-full border-t-2 mt-5 p-5">
-    <div
-      class="flex flex-wrap h-24 md:flex-grow bg-base-300 rounded-box place-items-center p-2 items-center justify-evenly">
+  
 
-      <div class="tooltip tooltip-bottom transition ease-in-out delay-100 hover:-translate-y-4 duration-300 z-10 hover:z-20"
-        data-tip="Bold (CTRL + B)">
-        <a class="toolbar-btn btn flex-1" data-command-type="nonValue" data-command="bold"><i
-            class="fa-solid fa-bold"></i></a>
-      </div>
-      <div class="tooltip tooltip-bottom transition ease-in-out delay-100 hover:-translate-y-4 duration-300 z-10 hover:z-20"
-        data-tip="Italic (CTRL + I)">
-        <a class="toolbar-btn btn" data-command-type="nonValue" data-command="italic"><i
-            class="fa-solid fa-italic"></i></a>
-      </div>
-      <div class="tooltip tooltip-bottom transition ease-in-out delay-100 hover:-translate-y-4 duration-300 z-10 hover:z-20"
-        data-tip="Underline (CTRL + U)">
-        <a class="toolbar-btn btn" data-command-type="nonValue" data-command="underline"><i
-            class="fa-solid fa-underline"></i></a>
-      </div>
-      <div class="tooltip tooltip-bottom transition ease-in-out delay-100 hover:-translate-y-4 duration-300 z-10 hover:z-20"
-        data-tip="Strikethrough (CTRL + =)">
-        <a class="toolbar-btn btn" data-command-type="nonValue" data-command="strikethrough"><i
-            class="fa-solid fa-strikethrough"></i></a>
-      </div>
-      <div class="tooltip tooltip-bottom transition ease-in-out delay-100 hover:-translate-y-4 duration-300 z-10 hover:z-20"
-        data-tip="Subscript (CTRL + -)">
-        <a class="toolbar-btn btn" data-command-type="nonValue" data-command="subscript"><i
-            class="fa-solid fa-subscript"></i></a>
-      </div>
-      <div class="tooltip tooltip-bottom transition ease-in-out delay-100 hover:-translate-y-4 duration-300 z-10 hover:z-20"
-        data-tip="Superscript (CTRL + SHIFT + -)">
-        <a class="toolbar-btn btn" data-command-type="nonValue" data-command="superscript"><i
-            class="fa-solid fa-superscript"></i></a>
-      </div>
-
+  <div>
+    <div class="tabs">
+        <button class="tab tab-sm sm:tab-lg tab-bordered  tab-active" data-target="#styleTab">
+          <i class="fa-solid fa-brush mr-2"></i>Style
+        </button>
+        <button class="tab tab-sm sm:tab-lg tab-bordered" data-target="#fontsTab">
+          <i class="fa-solid fa-font mr-2"></i>Fonts
+        </button>
+        <button class="tab tab-sm sm:tab-lg tab-bordered" data-target="#alignTab">
+          <i class="fa-solid fa-align-center mr-2"></i>Alignment
+        </button>
+        <button class="tab tab-sm sm:tab-lg tab-bordered" data-target="#actionTab">
+          <i class="fa-solid fa-file mr-2"></i>Action
+        </button>
     </div>
+    <div>
+        <div id="styleTab" class="tab-content">
+            <div
+                class="flex flex-wrap h-24 md:flex-grow bg-base-300 my-1 place-items-center p-2 items-center justify-evenly">
 
-    <div class="divider  my-1 mx-1"></div>
+                <div class="tooltip tooltip-bottom z-10 hover:z-20"
+                    data-tip="Bold (CTRL + B)">
+                    <a class="toolbar-btn btn flex-1" data-command-type="nonValue" data-command="bold">
+                        <i class="fa-solid fa-bold"></i>
+                    </a>
+                </div>
+                <div class="tooltip tooltip-bottom z-10 hover:z-20"
+                    data-tip="Italic (CTRL + I)">
+                    <a class="toolbar-btn btn" data-command-type="nonValue" data-command="italic">
+                        <i class="fa-solid fa-italic"></i>
+                    </a>
+                </div>
+                <div class="tooltip tooltip-bottom z-10 hover:z-20"
+                    data-tip="Underline (CTRL + U)">
+                    <a class="toolbar-btn btn" data-command-type="nonValue" data-command="underline">
+                        <i class="fa-solid fa-underline"></i>
+                    </a>
+                </div>
+                <div class="tooltip tooltip-bottom z-10 hover:z-20"
+                    data-tip="Strikethrough (CTRL + =)">
+                    <a class="toolbar-btn btn" data-command-type="nonValue" data-command="strikethrough">
+                        <i class="fa-solid fa-strikethrough"></i>
+                    </a>
+                </div>
+                <div class="tooltip tooltip-bottom z-10 hover:z-20"
+                    data-tip="Subscript (CTRL + -)">
+                    <a class="toolbar-btn btn" data-command-type="nonValue" data-command="subscript">
+                        <i class="fa-solid fa-subscript"></i>
+                    </a>
+                </div>
+                <div class="tooltip tooltip-bottom z-10 hover:z-20"
+                    data-tip="Superscript (CTRL + SHIFT + -)">
+                    <a class="toolbar-btn btn" data-command-type="nonValue" data-command="superscript">
+                        <i class="fa-solid fa-superscript"></i>
+                    </a>
+                </div>
 
-    <div
-      class="flex flex-wrap h-24 md:flex-grow bg-base-300 rounded-box place-items-center p-2 items-center justify-evenly">
-      <div class="tooltip tooltip-bottom transition ease-in-out delay-100 hover:-translate-y-4 duration-300 z-10 hover:z-20"
-        data-tip="Font (CTRL + F)">
-        <a class="toolbar-btn btn flex-1" id="fontBtn" href="#fontModal"><i class="fa-solid fa-font"></i></a>
-      </div>
-      <div class="tooltip tooltip-bottom transition ease-in-out delay-100 hover:-translate-y-4 duration-300 z-10 hover:z-20"
-        data-tip="Font Size (CTRL + SHIFT + P)">
-        <a class="toolbar-btn btn" id="fontSizeBtn" href="#fontSizeModal" data-command="superscript"><i
-            class="fa-solid fa-text-size"></i></a>
-      </div>
-      <div class="tooltip tooltip-bottom transition ease-in-out delay-100 hover:-translate-y-4 duration-300 z-10 hover:z-20"
-        data-tip="Font Color (CTRL + SHIFT + F)">
-        <a class="toolbar-btn btn" id="fontColorBtn" href="#colorModal"><i class="fa-solid fa-paint-brush-alt"></i></a>
-      </div>
-      <div class="tooltip tooltip-bottom transition ease-in-out delay-100 hover:-translate-y-4 duration-300 z-10 hover:z-20"
-        data-tip="Background (CTRL + SHIFT + H)">
-        <a class="toolbar-btn btn" id="bgColorBtn" href="#colorModal"><i class="fa-solid fa-highlighter"></i></a>
-      </div>
+            </div>
+        </div>
+        <div id="fontsTab" class="tab-content hidden">
+            <div
+                class="flex flex-wrap h-24 md:flex-grow bg-base-300 my-1 place-items-center p-2 items-center justify-evenly">
+
+                <div class="tooltip tooltip-bottom z-10 hover:z-20"
+                    data-tip="Font (CTRL + F)">
+                    <a class="toolbar-btn btn flex-1" id="fontBtn" href="#fontModal">
+                        <i class="fa-solid fa-font"></i>
+                    </a>
+                </div>
+                <div class="tooltip tooltip-bottom z-10 hover:z-20"
+                    data-tip="Font Size (CTRL + SHIFT + P)">
+                    <a class="toolbar-btn btn" id="fontSizeBtn" href="#fontSizeModal" data-command="superscript">
+                        <i class="fa-solid fa-text-size"></i>
+                    </a>
+                </div>
+                <div class="tooltip tooltip-bottom z-10 hover:z-20"
+                    data-tip="Font Color (CTRL + SHIFT + F)">
+                    <a class="toolbar-btn btn" id="fontColorBtn" href="#colorModal">
+                        <i class="fa-solid fa-paint-brush-alt"></i>
+                    </a>
+                </div>
+                <div class="tooltip tooltip-bottom z-10 hover:z-20"
+                    data-tip="Background (CTRL + SHIFT + H)">
+                    <a class="toolbar-btn btn" id="bgColorBtn" href="#colorModal">
+                        <i class="fa-solid fa-highlighter"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div id="alignTab" class="tab-content hidden">
+            <div
+                class="flex flex-wrap h-24 md:flex-grow bg-base-300 my-1 place-items-center p-2 items-center justify-evenly">
+
+                <div class="tooltip tooltip-bottom z-10 hover:z-20"
+                    data-tip="Align Left (CTRL + L)">
+                    <a class="align-btn btn flex-1" data-align="left">
+                        <i class="fa-solid fa-align-left"></i>
+                    </a>
+                </div>
+                <div class="tooltip tooltip-bottom z-10 hover:z-20"
+                    data-tip="Align Center (CTRL + E)">
+                    <a class="align-btn btn" data-align="center">
+                        <i class="fa-solid fa-align-center"></i>
+                    </a>
+                </div>
+                <div class="tooltip tooltip-bottom z-10 hover:z-20"
+                    data-tip="Align Right (CTRL + R)">
+                    <a class="align-btn btn" data-align="right">
+                        <i class="fa-solid fa-align-right"></i>
+                    </a>
+                </div>
+                <div class="tooltip tooltip-bottom z-10 hover:z-20"
+                    data-tip="Align Justify (CTRL + J)">
+                    <a class="align-btn btn" data-align="justify">
+                        <i class="fa-solid fa-align-justify"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div id="actionTab" class="tab-content hidden">
+            <div
+                class="flex flex-wrap h-24 md:flex-grow bg-base-300 my-1 place-items-center p-2 items-center justify-evenly">
+
+                <div class="tooltip tooltip-bottom z-10 hover:z-20"
+                    data-tip="Download (CTRL + S)">
+                    <a href="#exportModal" class="toolbar-btn btn" id="downloadBtn">
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                    </a>
+                </div>
+                <div class="tooltip tooltip-bottom z-10 hover:z-20"
+                    data-tip="Print (CTRL + P)">
+                    <a class="toolbar-btn btn flex-1" id="printBtn">
+                        <i class="fa-solid fa-print"></i>
+                    </a>
+                </div>
+                <div class="tooltip tooltip-bottom z-10 hover:z-20"
+                    data-tip="Undo (CTRL + Z)">
+                    <a class="toolbar-btn btn" data-command-type="nonValue" data-command="undo">
+                        <i class="fa-solid fa-rotate-left"></i>
+                    </a>
+                </div>
+                <div class="tooltip tooltip-bottom z-10 hover:z-20"
+                    data-tip="Redo (CTRL + Y)">
+                    <a class="toolbar-btn btn" data-command-type="nonValue" data-command="redo">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
     </div>
-
-    <div class="divider my-1 mx-1"></div>
-
-    <div
-      class="flex flex-wrap h-24 md:flex-grow bg-base-300 rounded-box place-items-center p-2 items-center justify-evenly">
-      <div class="tooltip tooltip-bottom transition ease-in-out delay-100 hover:-translate-y-4 duration-300 z-10 hover:z-20"
-        data-tip="Align Left (CTRL + L)">
-        <a class="align-btn btn flex-1" data-align="left"><i class="fa-solid fa-align-left"></i></a>
-      </div>
-      <div class="tooltip tooltip-bottom transition ease-in-out delay-100 hover:-translate-y-4 duration-300 z-10 hover:z-20"
-        data-tip="Align Center (CTRL + E)">
-        <a class="align-btn btn" data-align="center"><i class="fa-solid fa-align-center"></i></a>
-      </div>
-      <div class="tooltip tooltip-bottom transition ease-in-out delay-100 hover:-translate-y-4 duration-300 z-10 hover:z-20"
-        data-tip="Align Right (CTRL + R)">
-        <a class="align-btn btn" data-align="right"><i class="fa-solid fa-align-right"></i></a>
-      </div>
-      <div class="tooltip tooltip-bottom transition ease-in-out delay-100 hover:-translate-y-4 duration-300 z-10 hover:z-20"
-        data-tip="Align Justify (CTRL + J)">
-        <a class="align-btn btn" data-align="justify"><i class="fa-solid fa-align-justify"></i></a>
-      </div>
-    </div>
-
-    <div class="divider my-1 mx-1"></div>
-    <div
-      class="flex flex-wrap h-24 md:flex-grow bg-base-300 rounded-box place-items-center p-2 items-center justify-evenly">
-
-      <div class="tooltip tooltip-bottom transition ease-in-out delay-100 hover:-translate-y-4 duration-300 z-10 hover:z-20"
-        data-tip="Download (CTRL + S)">
-        <a href="#exportModal" class="toolbar-btn btn" id="downloadBtn"><i class="fa-solid fa-file-arrow-down"></i></a>
-      </div>
-      <div class="tooltip tooltip-bottom transition ease-in-out delay-100 hover:-translate-y-4 duration-300 z-10 hover:z-20"
-        data-tip="Print (CTRL + P)">
-        <a class="toolbar-btn btn flex-1" id="printBtn"><i class="fa-solid fa-print"></i></a>
-      </div>
-      <div class="tooltip tooltip-bottom transition ease-in-out delay-100 hover:-translate-y-4 duration-300 z-10 hover:z-20"
-        data-tip="Undo (CTRL + Z)">
-        <a class="toolbar-btn btn" data-command-type="nonValue" data-command="undo"><i
-            class="fa-solid fa-rotate-left"></i></a>
-      </div>
-      <div class="tooltip tooltip-bottom transition ease-in-out delay-100 hover:-translate-y-4 duration-300 z-10 hover:z-20"
-        data-tip="Redo (CTRL + Y)">
-        <a class="toolbar-btn btn" data-command-type="nonValue" data-command="redo"><i
-            class="fa-solid fa-rotate-right"></i></a>
-      </div>
-    </div>
-  </div>
+</div>
 
   <div class="mockup-window border bg-base-300 m-10 mx-auto md:w-2/3 sm:w-5/6 shadow-lg">
     <div id="editor" class="editor px-30 h-[28rem] pl-12 overflow-y-auto bg-base-200" contenteditable="true">
@@ -163,312 +213,337 @@
     </div>
   </div>
 
+  <div class="modals">
 
-  <div class="modal" id="fontModal">
-    <div class="modal-box">
-      <a href="#" class="btn btn-sm btn-circle absolute right-2 top-2">✕</a>
-      <h3 class="font-bold text-lg">Select a font:</h3>
+    <div class="modal" id="fontModal">
+      <div class="modal-box">
+        <a href="#" class="btn btn-sm btn-circle absolute right-2 top-2">✕</a>
+        <h3 class="font-bold text-lg">Select a font:</h3>
 
-      <div class="px-3 py-4 overflow-y-auto rounded">
-        <ul class="space-y-2">
-          <li>
-            <a href="#" data-command-type="value" data-command="fontName" data-value="Quicksand"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base font-c-8 rounded-lg">
-              <span class="ml-3">Quicksand</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" data-command-type="value" data-command="fontName" data-value="Roboto" data-value-is-int="false"
-              class="toolbar-btn flex btn items-center p-2 text-base font-c-1 rounded-lg">
-              <span class="ml-3">Roboto</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" data-command-type="value" data-command="fontName" data-value="Times New Roman"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base font-c-2 rounded-lg">
-              <span class="ml-3">Times New Roman</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" data-command-type="value" data-command="fontName" data-value="Franklin Gothic Medium"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base font-c-3 rounded-lg">
-              <span class="ml-3">Franklin Gothic Medium</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" data-command-type="value" data-command="fontName" data-value="Courier New"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base font-c-4 rounded-lg">
-              <span class="ml-3">Courier New</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" data-command-type="value" data-command="fontName" data-value="Gill Sans"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base font-c-5 rounded-lg">
-              <span class="ml-3">Gill Sans</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" data-command-type="value" data-command="fontName" data-value="Lucida Sans"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base font-c-6 rounded-lg">
-              <span class="ml-3">Lucida Sans</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" data-command-type="value" data-command="fontName" data-value="Segoe UI"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base font-c-7 rounded-lg">
-              <span class="ml-3">Segoe UI</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+        <div class="px-3 py-4 overflow-y-auto rounded">
+          <ul class="space-y-2">
+            <li>
+              <a href="#" data-command-type="value" data-command="fontName" data-value="Quicksand"
+                data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base font-c-8 rounded-lg">
+                <span class="ml-3">Quicksand</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-command-type="value" data-command="fontName" data-value="Roboto"
+                data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base font-c-1 rounded-lg">
+                <span class="ml-3">Roboto</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-command-type="value" data-command="fontName" data-value="Times New Roman"
+                data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base font-c-2 rounded-lg">
+                <span class="ml-3">Times New Roman</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-command-type="value" data-command="fontName" data-value="Franklin Gothic Medium"
+                data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base font-c-3 rounded-lg">
+                <span class="ml-3">Franklin Gothic Medium</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-command-type="value" data-command="fontName" data-value="Courier New"
+                data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base font-c-4 rounded-lg">
+                <span class="ml-3">Courier New</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-command-type="value" data-command="fontName" data-value="Gill Sans"
+                data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base font-c-5 rounded-lg">
+                <span class="ml-3">Gill Sans</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-command-type="value" data-command="fontName" data-value="Lucida Sans"
+                data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base font-c-6 rounded-lg">
+                <span class="ml-3">Lucida Sans</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-command-type="value" data-command="fontName" data-value="Segoe UI"
+                data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base font-c-7 rounded-lg">
+                <span class="ml-3">Segoe UI</span>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-    </div>
-  </div>
-
-  <div class="modal" id="fontSizeModal">
-    <div class="modal-box">
-      <a href="#" class="btn btn-sm btn-circle absolute right-2 top-2">✕</a>
-      <h3 class="font-bold text-lg">Select a font size:</h3>
-
-      <div class="px-3 py-4 overflow-y-auto rounded">
-        <ul class="space-y-2">
-          <li>
-            <a href="#" data-command-type="value" data-command="fontSize" data-value="1" data-value-is-int="true"
-              class="toolbar-btn flex btn items-center p-2 text-base rounded-lg text-[10px]">
-              <span class="ml-3">10 px</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" data-command-type="value" data-command="fontSize" data-value="2" data-value-is-int="true"
-              class="toolbar-btn flex btn items-center p-2 text-base rounded-lg text-[13px]">
-              <span class="ml-3">13 px</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" data-command-type="value" data-command="fontSize" data-value="3" data-value-is-int="true"
-              class="toolbar-btn flex btn items-center p-2 text-base rounded-lg text-[16px]">
-              <span class="ml-3">16 px</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" data-command-type="value" data-command="fontSize" data-value="4" data-value-is-int="true"
-              class="toolbar-btn flex btn items-center p-2 text-base rounded-lg text-[18px]">
-              <span class="ml-3">18 px</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" data-command-type="value" data-command="fontSize" data-value="5" data-value-is-int="true"
-              class="toolbar-btn flex btn items-center p-2 text-base rounded-lg text-[24px]">
-              <span class="ml-3">24 px</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" data-command-type="value" data-command="fontSize" data-value="6" data-value-is-int="true"
-              class="toolbar-btn flex btn items-center p-2 text-base rounded-lg text-[32px]">
-              <span class="ml-3">32 px</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" data-command-type="value" data-command="fontSize" data-value="7" data-value-is-int="true"
-              class="toolbar-btn flex btn items-center p-2 text-base rounded-lg text-[48px]">
-              <span class="ml-3">48 px</span>
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
-  </div>
 
-  <div class="modal" id="colorModal">
-    <div class="modal-box">
-      <a href="#" class="btn btn-sm btn-circle absolute right-2 top-2">✕</a>
-      <h3 class="font-bold text-lg">Select a <span id="colorTitle">font</span>:</h3>
-      <div class="px-3 py-4 overflow-y-auto rounded">
-        <h3 class="text-base">basic</h3>
-        <div class="grid grid-cols-5 gap-4">
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#ffffff" data-value-is-int="false"
-              class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-white">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#ff0000"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#ff0000]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#00ff00"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#00ff00]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#0000ff"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#0000ff]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#000000"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-black">
-              <span class="ml-3"></span>
-            </a>
-          </div>
+    <div class="modal" id="fontSizeModal">
+      <div class="modal-box">
+        <a href="#" class="btn btn-sm btn-circle absolute right-2 top-2">✕</a>
+        <h3 class="font-bold text-lg">Select a font size:</h3>
 
+        <div class="px-3 py-4 overflow-y-auto rounded">
+          <ul class="space-y-2">
+            <li>
+              <a href="#" data-command-type="value" data-command="fontSize" data-value="1" data-value-is-int="true"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg text-[10px]">
+                <span class="ml-3">10 px</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-command-type="value" data-command="fontSize" data-value="2" data-value-is-int="true"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg text-[13px]">
+                <span class="ml-3">13 px</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-command-type="value" data-command="fontSize" data-value="3" data-value-is-int="true"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg text-[16px]">
+                <span class="ml-3">16 px</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-command-type="value" data-command="fontSize" data-value="4" data-value-is-int="true"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg text-[18px]">
+                <span class="ml-3">18 px</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-command-type="value" data-command="fontSize" data-value="5" data-value-is-int="true"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg text-[24px]">
+                <span class="ml-3">24 px</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-command-type="value" data-command="fontSize" data-value="6" data-value-is-int="true"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg text-[32px]">
+                <span class="ml-3">32 px</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-command-type="value" data-command="fontSize" data-value="7" data-value-is-int="true"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg text-[48px]">
+                <span class="ml-3">48 px</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-
-      <div class="px-3 py-4 overflow-y-auto rounded">
-        <h3 class="text-base">Palette</h3>
-        <div class="grid grid-cols-5 gap-4">
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="1abc9c" data-value-is-int="false"
-              class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#1abc9c]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#17a085"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#17a085]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#2ecb71"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#2ecb71]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#27ae60"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#27ae60]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#3498db"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#3498db]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#2980b9"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#2980b9]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#9b59b6"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#9b59b6]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#8e44ad"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#8e44ad]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#34495e"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#34495e]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#2c3e50"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#2c3e50]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#f1c40e"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#f1c40e]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#f39c12"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#f39c12]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#e67e21"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#e67e21]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#d35400"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#d35400]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#e74c3c"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#e74c3c]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#c0392b"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#c0392b]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#ecf0f1"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#ecf0f1]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#bdc3c7"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#bdc3c7]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#94a5a6"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#94a5a6]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-          <div>
-            <a href="#" data-command-type="value" data-command="foreColor" data-value="#7f8c8d"
-              data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#7f8c8d]">
-              <span class="ml-3"></span>
-            </a>
-          </div>
-
-        </div>
-      </div>
-
     </div>
-  </div>
 
-  <div class="modal" id="exportModal">
-    <div class="modal-box">
-      <a href="#" class="btn btn-sm btn-circle absolute right-2 top-2">✕</a>
-      <h3 class="font-bold text-lg">Download as:</h3>
+    <div class="modal" id="colorModal">
+      <div class="modal-box">
+        <a href="#" class="btn btn-sm btn-circle absolute right-2 top-2">✕</a>
+        <h3 class="font-bold text-lg">Select a <span id="colorTitle">font</span>:</h3>
+        <div class="px-3 py-4 overflow-y-auto rounded">
+          <h3 class="text-base">basic</h3>
+          <div class="grid grid-cols-5 gap-4">
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#ffffff"
+                data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-white">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#ff0000"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#ff0000]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#00ff00"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#00ff00]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#0000ff"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#0000ff]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#000000"
+                data-value-is-int="false" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-black">
+                <span class="ml-3"></span>
+              </a>
+            </div>
 
-      <div class="px-3 py-4 overflow-y-auto rounded">
-        <ul class="space-y-2">
-          <li id="exportHtml">
-            <a href="#" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg">
-              <span class="ml-3">HTML</span>
-            </a>
-          </li>
-          <li id="exportText">
-            <a href="#" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg">
-              <span class="ml-3">Plain Text</span>
-            </a>
-          </li>
-          
-        </ul>
+          </div>
+        </div>
+
+        <div class="px-3 py-4 overflow-y-auto rounded">
+          <h3 class="text-base">Palette</h3>
+          <div class="grid grid-cols-5 gap-4">
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="1abc9c"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#1abc9c]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#17a085"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#17a085]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#2ecb71"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#2ecb71]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#27ae60"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#27ae60]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#3498db"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#3498db]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#2980b9"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#2980b9]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#9b59b6"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#9b59b6]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#8e44ad"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#8e44ad]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#34495e"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#34495e]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#2c3e50"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#2c3e50]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#f1c40e"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#f1c40e]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#f39c12"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#f39c12]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#e67e21"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#e67e21]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#d35400"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#d35400]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#e74c3c"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#e74c3c]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#c0392b"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#c0392b]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#ecf0f1"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#ecf0f1]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#bdc3c7"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#bdc3c7]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#94a5a6"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#94a5a6]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" data-command-type="value" data-command="foreColor" data-value="#7f8c8d"
+                data-value-is-int="false"
+                class="toolbar-btn flex btn items-center p-2 text-base rounded-lg bg-[#7f8c8d]">
+                <span class="ml-3"></span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="modal" id="exportModal">
+      <div class="modal-box">
+        <a href="#" class="btn btn-sm btn-circle absolute right-2 top-2">✕</a>
+        <h3 class="font-bold text-lg">Download as:</h3>
+
+        <div class="px-3 py-4 overflow-y-auto rounded">
+          <ul class="space-y-2">
+            <li id="exportHtml">
+              <a href="#" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg">
+                <span class="ml-3">HTML</span>
+              </a>
+            </li>
+            <li id="exportText">
+              <a href="#" class="toolbar-btn flex btn items-center p-2 text-base rounded-lg">
+                <span class="ml-3">Plain Text</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
       </div>
     </div>
   </div>

@@ -9,6 +9,7 @@
 .editor {
   outline: none;
   counter-reset: line;
+  resize: vertical;
 }
 
 .editor div {
@@ -49,4 +50,3 @@
 .font-c-8 {
   font-family: Quicksand, Times, serif;
 }
-
