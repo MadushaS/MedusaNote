@@ -65,11 +65,11 @@ Font Color <kbd>CTRL + SHIFT + F</kbd>
 
 Font Background Color <kbd>CTRL + SHIFT + H</kbd>
 
-Align Text (Left / Center / Right / Justify) <kbd>CTRL + SHIFT + L</kbd> <kbd>CTRL + SHIFT + E</kbd> <kbd>CTRL + SHIFT + R</kbd> <kbd>CTRL + SHIFT + J</kbd>
+Align Text (Left / Center / Right / Justify) <kbd>CTRL + L</kbd> <kbd>CTRL + E</kbd> <kbd>CTRL + R</kbd> <kbd>CTRL + J</kbd>
 
 download File <kbd>CTRL + S</kbd>
 
-Print File <kbd>CTRL +P</kbd>
+Print File <kbd>CTRL + P</kbd>
 
 ---
 
