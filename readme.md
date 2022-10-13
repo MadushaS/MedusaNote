@@ -15,9 +15,6 @@
     style="text-align:center;">
   A Simple text editor based on JavaScript
   <br/>
-  <i>in-Course Assessment – 01</i> 😉
-  <br>
-  <b>CSCI-12063 : Web Programming</b>
   <br>
   👽👾🤖🧑🏽‍💻✅
 </div>
