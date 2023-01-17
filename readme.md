@@ -32,7 +32,7 @@ style="text-align:center;">
   
   [![Twitter Follow](https://img.shields.io/twitter/follow/_MadushaS?style=for-the-badge)](https://twitter.com/_MadushaS)
 
-  [! [Security Status] (https://www.murphysec.com/platform3/v3/badge/1611213826997923840.svg?t=1)] (https://www.murphysec.com/accept?code=a6674424e9c6848b76cbb80c83d55c1b&type=1&from=2&t=2)
+  [![Security Status](https://www.murphysec.com/platform3/v3/badge/1611213826997923840.svg?t=1)](https://www.murphysec.com/accept?code=a6674424e9c6848b76cbb80c83d55c1b&type=1&from=2&t=2)
 
 </p>
 
