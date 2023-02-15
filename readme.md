@@ -15,9 +15,6 @@
     style="text-align:center;">
   A Simple text editor based on JavaScript
   <br/>
-  <i>in-Course Assessment – 01</i> 😉
-  <br>
-  <b>CSCI-12063 : Web Programming</b>
   <br>
   👽👾🤖🧑🏽‍💻✅
 </div>
@@ -34,6 +31,8 @@ style="text-align:center;">
   [![GitHub followers](https://img.shields.io/github/followers/MadushaS?style=for-the-badge)](https://github.com/MadushaS)
   
   [![Twitter Follow](https://img.shields.io/twitter/follow/_MadushaS?style=for-the-badge)](https://twitter.com/_MadushaS)
+
+  [![Security Status](https://www.murphysec.com/platform3/v3/badge/1611213826997923840.svg?t=1)](https://www.murphysec.com/accept?code=a6674424e9c6848b76cbb80c83d55c1b&type=1&from=2&t=2)
 
 </p>
 
@@ -65,11 +64,11 @@ Font Color <kbd>CTRL + SHIFT + F</kbd>
 
 Font Background Color <kbd>CTRL + SHIFT + H</kbd>
 
-Align Text (Left / Center / Right / Justify) <kbd>CTRL + SHIFT + L</kbd> <kbd>CTRL + SHIFT + E</kbd> <kbd>CTRL + SHIFT + R</kbd> <kbd>CTRL + SHIFT + J</kbd>
+Align Text (Left / Center / Right / Justify) <kbd>CTRL + L</kbd> <kbd>CTRL + E</kbd> <kbd>CTRL + R</kbd> <kbd>CTRL + J</kbd>
 
 download File <kbd>CTRL + S</kbd>
 
-Print File <kbd>CTRL +P</kbd>
+Print File <kbd>CTRL + P</kbd>
 
 ---
 
