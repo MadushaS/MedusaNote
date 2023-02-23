@@ -1,28 +1,22 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@fortawesome/fontawesome-free': ^6.0.1
   autoprefixer: ^10.4.13
-  daisyui: ^2.24.0
+  daisyui: ^2.51.0
   postcss: ^8.4.21
-  tailwindcss: ^3.2.6
+  postcss-import: ^15.1.0
+  tailwindcss: ^3.2.7
 
 dependencies:
-  '@fortawesome/fontawesome-free': 6.3.0
-  daisyui: 2.50.1_gbtt6ss3tbiz4yjtvdr6fbrj44
+  daisyui: 2.51.0_gbtt6ss3tbiz4yjtvdr6fbrj44
 
 devDependencies:
   autoprefixer: 10.4.13_postcss@8.4.21
   postcss: 8.4.21
-  tailwindcss: 3.2.6_postcss@8.4.21
+  postcss-import: 15.1.0_postcss@8.4.21
+  tailwindcss: 3.2.7_postcss@8.4.21
 
 packages:
-
-  /@fortawesome/fontawesome-free/6.3.0:
-    resolution: {integrity: sha512-qVtd5i1Cc7cdrqnTWqTObKQHjPWAiRwjUPaXObaeNPcy7+WKxJumGBx66rfSFgK6LNpIasVKkEgW8oyf0tmPLA==}
-    engines: {node: '>=6'}
-    requiresBuild: true
-    dev: false
 
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -76,7 +70,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.5
-      caniuse-lite: 1.0.30001452
+      caniuse-lite: 1.0.30001457
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -98,8 +92,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001452
-      electron-to-chromium: 1.4.296
+      caniuse-lite: 1.0.30001457
+      electron-to-chromium: 1.4.308
       node-releases: 2.0.10
       update-browserslist-db: 1.0.10_browserslist@4.21.5
 
@@ -107,8 +101,8 @@ packages:
     resolution: {integrity: sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==}
     engines: {node: '>= 6'}
 
-  /caniuse-lite/1.0.30001452:
-    resolution: {integrity: sha512-Lkp0vFjMkBB3GTpLR8zk4NwW5EdRdnitwYJHDOOKIU85x4ckYCPQ+9WlVvSVClHxVReefkUMtWZH2l9KGlD51w==}
+  /caniuse-lite/1.0.30001457:
+    resolution: {integrity: sha512-SDIV6bgE1aVbK6XyxdURbUE89zY7+k1BBBaOwYwkNCglXlel/E7mELiHC64HQ+W0xSKlqWhV9Wh7iHxUjMs4fA==}
 
   /chokidar/3.5.3:
     resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==}
@@ -161,8 +155,8 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
 
-  /daisyui/2.50.1_gbtt6ss3tbiz4yjtvdr6fbrj44:
-    resolution: {integrity: sha512-Z4GuU/ZknYoHt7qfDQSC5rrxMJ6ffNV9baQfCSbo5J/clC1DBppfrqLJXS8A3NPBRo2GbbpKwdA1ZdThWdpBtQ==}
+  /daisyui/2.51.0_gbtt6ss3tbiz4yjtvdr6fbrj44:
+    resolution: {integrity: sha512-HGM89+VzZ/KDsH4cK6OhizIscXOVzkEENynovL6bXPfJDOKZQz0V2CuTGEoQmN8FeuGxrZiz/He1P9p+E9Qr5A==}
     peerDependencies:
       autoprefixer: ^10.0.2
       postcss: ^8.1.6
@@ -172,7 +166,7 @@ packages:
       css-selector-tokenizer: 0.8.0
       postcss: 8.4.21
       postcss-js: 4.0.1_postcss@8.4.21
-      tailwindcss: 3.2.6_postcss@8.4.21
+      tailwindcss: 3.2.7_postcss@8.4.21
     transitivePeerDependencies:
       - ts-node
     dev: false
@@ -195,8 +189,8 @@ packages:
   /dlv/1.1.3:
     resolution: {integrity: sha512-+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==}
 
-  /electron-to-chromium/1.4.296:
-    resolution: {integrity: sha512-i/6Q+Y9bluDa2a0NbMvdtG5TuS/1Fr3TKK8L+7UUL9QjRS5iFJzCC3r70xjyOnLiYG8qGV4/mMpe6HuAbdJW4w==}
+  /electron-to-chromium/1.4.308:
+    resolution: {integrity: sha512-qyTx2aDFjEni4UnRWEME9ubd2Xc9c0zerTUl/ZinvD4QPsF0S7kJTV/Es/lPCTkNX6smyYar+z/n8Cl6pFr8yQ==}
 
   /escalade/3.1.1:
     resolution: {integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==}
@@ -350,6 +344,18 @@ packages:
       read-cache: 1.0.0
       resolve: 1.22.1
 
+  /postcss-import/15.1.0_postcss@8.4.21:
+    resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      postcss: ^8.0.0
+    dependencies:
+      postcss: 8.4.21
+      postcss-value-parser: 4.2.0
+      read-cache: 1.0.0
+      resolve: 1.22.1
+    dev: true
+
   /postcss-js/4.0.1_postcss@8.4.21:
     resolution: {integrity: sha512-dDLF8pEO191hJMtlHFPRa8xsizHaM82MLfNkUHdUtVEV3tgTp5oj+8qbEqYM57SLfc74KSbw//4SeJma2LRVIw==}
     engines: {node: ^12 || ^14 || >= 16}
@@ -451,8 +457,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  /tailwindcss/3.2.6_postcss@8.4.21:
-    resolution: {integrity: sha512-BfgQWZrtqowOQMC2bwaSNe7xcIjdDEgixWGYOd6AL0CbKHJlvhfdbINeAW76l1sO+1ov/MJ93ODJ9yluRituIw==}
+  /tailwindcss/3.2.7_postcss@8.4.21:
+    resolution: {integrity: sha512-B6DLqJzc21x7wntlH/GsZwEXTBttVSl1FtCzC8WP4oBc/NKef7kaax5jeihkkCEWc831/5NDJ9gRNDK6NEioQQ==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     peerDependencies:
