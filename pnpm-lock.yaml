@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   daisyui:
-    specifier: ^3.1.6
-    version: 3.1.6(postcss@8.4.25)
+    specifier: ^3.2.1
+    version: 3.2.1
 
 devDependencies:
   autoprefixer:
@@ -179,11 +179,9 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
 
-  /daisyui@3.1.6(postcss@8.4.25):
-    resolution: {integrity: sha512-P/2WUn4ZImEc2IfPSYw3qPCUnnJNju0P6ii0fUqtTURUj0oda6L0tm4EzrUmB2EbqB6grZ9nKHPTSniKaPYp1w==}
+  /daisyui@3.2.1:
+    resolution: {integrity: sha512-gIqE6wiqoJt9G8+n3R/SwLeUnpNCE2eDhT73rP0yZYVaM7o6zVcakBH3aEW5RGpx3UkonPiLuvcgxRcb2lE8TA==}
     engines: {node: '>=16.9.0'}
-    peerDependencies:
-      postcss: ^8
     dependencies:
       colord: 2.9.3
       css-selector-tokenizer: 0.8.0
