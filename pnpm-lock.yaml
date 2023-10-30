@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   daisyui:
-    specifier: ^3.7.5
-    version: 3.7.5
+    specifier: ^3.9.4
+    version: 3.9.4
 
 devDependencies:
   autoprefixer:
@@ -179,8 +179,8 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
 
-  /daisyui@3.7.5:
-    resolution: {integrity: sha512-udhiBJYVvcPGXa+mL5IElke6EdddKecjbbz6m43+9IVqzK8GBwetg092Edclo42TkNboLD9nzodeesJygqZt2A==}
+  /daisyui@3.9.4:
+    resolution: {integrity: sha512-fvi2RGH4YV617/6DntOVGcOugOPym9jTGWW2XySb5ZpvdWO4L7bEG77VHirrnbRUEWvIEVXkBpxUz2KFj0rVnA==}
     engines: {node: '>=16.9.0'}
     dependencies:
       colord: 2.9.3
