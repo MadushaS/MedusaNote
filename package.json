@@ -23,7 +23,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "daisyui": "^3.7.5"
+    "daisyui": "^4.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.15",
